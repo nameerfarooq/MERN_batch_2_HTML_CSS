@@ -1,0 +1,11 @@
+.navbar {
+  background-color: aqua;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  align-items: center;
+}
+.menu_items {
+  display: flex;
+  gap: 15px;
+}
