@@ -1,11 +1,104 @@
-.navbar {
-  background-color: aqua;
+@import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap");
+
+/* * {
+  border: 1px solid red;
+} */
+
+.card {
+  width: 290px;
+  margin: 30px auto;
+  font-family: "Jost", sans-serif;
+  position: relative;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.card:hover {
+  box-shadow: 7px 10px 21px rgba(0, 0, 0, 0.403);
+}
+.card .top img {
+  border-radius: 10px;
+}
+
+.card .bottom .row {
   display: flex;
   justify-content: space-between;
-  padding: 20px;
   align-items: center;
 }
-.menu_items {
+
+.card .bottom {
+  padding: 50px 10px 10px 10px;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card .bottom .row .icon_container {
   display: flex;
-  gap: 15px;
+  align-items: center;
+  gap: 5px;
+}
+
+.card .text_1 {
+  font-weight: 600;
+  font-size: 20px;
+  color: #121212;
+}
+.card .text_2 {
+  font-size: 14px;
+  color: #8e8e8e;
+}
+.card .text_3 {
+  color: #4a4949;
+}
+.card .text_4 {
+  color: #aaaaaa;
+}
+.card .text_5 {
+  color: #b600d1;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.card .timer {
+  z-index: 1;
+  position: absolute;
+  right: 0;
+  top: -15px;
+  height: 40px;
+  background-color: #2636d9;
+  border-radius: 25px;
+  font-weight: 500;
+  font-size: 18px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #ffffff;
+  width: max-content;
+  padding-inline: 15px;
+}
+
+.card .top {
+  position: relative;
+}
+
+.card .top .icon {
+  position: absolute;
+  bottom: -40px;
+  width: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.card .top .icon .main_icon .duck {
+  border: 8px solid white;
+  border-radius: 50px;
+}
+.card .top .icon .main_icon {
+  position: relative;
+}
+.card .top .icon .main_icon .tick {
+  position: absolute;
+  top: 3px;
+  right: 3px;
 }
